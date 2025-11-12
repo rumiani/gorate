@@ -71,11 +71,3 @@ func main() {
 		}
 	}
 }
-
-/*
-1. Watch ✅
-2. Commas ✅
-3. Translate ✅
-4. Translate all
-5. Github action
-*/
