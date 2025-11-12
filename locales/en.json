@@ -1,0 +1,11 @@
+{
+  "welcome": "Hey there! 👋 Welcome!",
+  "menu": "💰 Assets:/assets\n🔤 Language: /start\n🧑‍💻 Developer: @rumimaz",
+  "FIAT":"Fiat",
+  "CRYPTO":"Crypto",
+  "GOLD":"Gold",
+  "price":"Price",
+  "notFound":"Not Found",
+  "failed":"Something went wrong",
+  "langUpdated":"Language updated successfully"
+}

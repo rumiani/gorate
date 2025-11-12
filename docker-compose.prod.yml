@@ -1,0 +1,14 @@
+services:
+  bot:
+    image: maziarrumiani/gorate:1.1.0
+    env_file:
+      - .env
+    environment:
+      ENV: ${ENV:-dev}       # dev locally, prod on VPS
+      BOT_TOKEN: ${DEV_TOKEN} # dev token in dev
+      DATABASE_URL: ${DATABASE_URL}
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"  # optional if bot serves HTTP
+    restart: unless-stopped
