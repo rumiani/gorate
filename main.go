@@ -27,12 +27,12 @@ func main() {
 	env := os.Getenv("ENV") // dev or prod
 	var token string
 	if env == "prod" {
-		token = os.Getenv("PROD_TOKEN")
+		token = os.Getenv("PROD_BOT_TOKEN")
 	} else {
-		token = os.Getenv("DEV_TOKEN")
+		token = os.Getenv("DEV_BOT_TOKEN")
 	}
 	if token == "" {
-		log.Fatal("BOT_TOKEN not set")
+		log.Fatal("ANY_BOT_TOKEN not set")
 	}
 
 	// Initialize Telegram Bot API with the token from environment

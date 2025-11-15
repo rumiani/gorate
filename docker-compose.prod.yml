@@ -5,7 +5,7 @@ services:
       - .env
     environment:
       ENV: prod  
-      BOT_TOKEN: ${PROD_TOKEN} # dev token in dev
+      PROD_BOT_TOKEN: ${PROD_BOT_TOKEN} # dev token in dev
       DATABASE_URL: ${DATABASE_URL}
     volumes:
       - .:/app

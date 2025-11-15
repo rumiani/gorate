@@ -64,7 +64,7 @@ jobs:
             docker run -d \
               --name gorate-bot-1 \
               -e ENV=prod \
-              -e PROD_TOKEN='${{ secrets.PROD_TOKEN }}' \
+              -e PROD_BOT_TOKEN='${{ secrets.PROD_BOT_TOKEN }}' \
               -e DATABASE_URL='${{ secrets.DATABASE_URL }}' \
               maziarrumiani/gorate:latest
           "
